@@ -1,6 +1,5 @@
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Album {
@@ -8,10 +7,10 @@ public class Album {
     private String artist;
     private int year;
     private int numTracks;
-    private List<Track> tracks;
+    private ArrayList<Track> tracks;
 
     // Конструктор с параметрами
-    public Album(String title, String artist, int year, int numTracks, List<Track> tracks) {
+    public Album(String title, String artist, int year, int numTracks, ArrayList<Track> tracks) {
         this.title = title;
         this.artist = artist;
         this.year = year;
@@ -48,7 +47,7 @@ public class Album {
         System.out.print("Количество треков в альбоме: ");
         int numTracks = scanner.nextInt();
 
-        List<Track> tracks = new ArrayList<>();
+        ArrayList<Track> tracks = new ArrayList<>();
         for (int i = 0; i < numTracks; i++) {
             System.out.println("Введите информацию о треке #" + (i + 1));
             Track track = Track.InputShortTrack();
@@ -59,7 +58,7 @@ public class Album {
     }
 
     // Установка списка треков
-    public void setTracks(List<Track> newTracks) {
+    public void setTracks(ArrayList<Track> newTracks) {
         tracks = newTracks;
     }
 
