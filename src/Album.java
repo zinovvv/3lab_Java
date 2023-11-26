@@ -24,7 +24,7 @@ public class Album {
         this.artist = other.artist;
         this.year = other.year;
         this.numTracks = other.numTracks;
-        this.tracks = new ArrayList<>(other.tracks);
+        this.tracks = other.tracks;
     }
 
     // Пустой конструктор

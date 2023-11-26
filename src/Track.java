@@ -70,6 +70,6 @@ public class Track {
     }
 
     public void OutputShortTrack(){
-        System.out.printf("%-25s Продолжительность: %-10d сек Жанр: %s%n", title, duration, genre);
+        System.out.printf("%-25s Продолжительность: %d сек\tЖанр: %s%n", title, duration, genre);
     }
 }
